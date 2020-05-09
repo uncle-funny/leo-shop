@@ -1,0 +1,115 @@
+.new
+    &:after
+        content: ""
+        display: block
+        width: 94px
+        height: 88px
+        position: absolute
+        top: -8px
+        right: -8px
+        background: url('../img/new.png') no-repeat
+.sale
+    &:after
+        content: ""
+        display: block
+        width: 94px
+        height: 88px
+        position: absolute
+        top: -8px
+        left: -8px
+        background: url('../img/sale.png') no-repeat
+.products
+    padding: 50px
+    h2
+        font-size: 24px
+        color: $headers-color
+        text-transform: uppercase
+    &-featured
+        &-cards
+            padding: 20px 0
+            display: flex
+            flex-wrap: wrap
+            justify-content: space-between
+        &-card
+            position: relative
+            max-width: 240px
+            min-height: 320px
+            margin-bottom: 2rem
+            background-color: #fff
+            border: 8px solid #fff
+            box-shadow: 0 0 5px #eaeaea
+            &-info
+                display: flex
+                align-items: center
+                justify-content: space-between
+                padding-top: 15px
+                &-text
+                    h4
+                        font-size: 14px
+                    span
+                        font-size: 1.5rem
+                        color: orange
+                &-icon
+                    width: 47px
+                    height: 47px
+                    background-color: #7db122
+                    border-radius: 100%
+                    &:hover
+                        cursor: pointer
+                    img
+                        position: relative
+                        left: 50%
+                        top: 50%
+                        transform: translate(-50%,-50%)
+    &-banner
+        position: relative
+        max-width: 233px
+        padding-top: 30px
+        border-top: 4px solid #4cb1ca
+        box-shadow: 0 0 0.357rem #eaeaea
+        text-align: center
+        &-btn
+            display: block
+            position: absolute
+            bottom: 5rem
+            left: 50%
+            transform: translateX(-50%)
+            padding: 16px 26px
+            font-size: 14px
+            color: #fff
+            background-color: #4cb1ca
+            border: none
+    &-form
+        margin-top: 30px
+        @extend .products-banner
+        padding: 30px 22px
+        p
+            position: relative
+            padding-top: 23px
+            color: $headers-color
+            margin-bottom: 1rem
+            &:after
+                content: ""
+                display: block
+                position: absolute
+                width: 85px 
+                height: 1px
+                bottom: -10px
+                left: 50%
+                transform: translateX(-50%) 
+                margin: 0 auto
+                
+                background-color: #ededed
+        input
+            width: 100%
+            padding: 5px
+            border: 0.071rem solid rgba(198, 198, 198, 0.5)
+            margin: 15px 0
+        &-btn
+            padding: 16px 24px
+            font-size: 14px
+            color: #fff
+            background-color: #7eb123
+            border: none
+            
+        

@@ -1,0 +1,39 @@
+.ship
+    padding: 20px 0
+    background-color: $top-header-color
+    &-wrap
+        width: 100%
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &-icon-bg
+        width: 65px
+        height: 65px
+        background-color: #fff
+        border-radius: 100%
+        font-size: 2rem
+        position: relative
+        margin-right: 20px
+        & > i
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%,-50%)
+            color: $top-header-color
+        
+    &-block
+        display: flex
+        align-items: center 
+        p            
+            color: #ffffff            
+            font-size: 1.5rem            
+            text-transform: uppercase
+            a
+                @extend p
+    &-car
+        .ship-icon-bg > i
+            transform: scale(-1,1) translate(50%,-50%)
+            
+
+            
+        

@@ -1,0 +1,163 @@
+.footer
+    padding: 50px 0
+    background-color: $footer
+    font-weight: 400
+    color: #fff
+    line-height: 1.714rem
+    h2
+        color: $footer-color
+        font-size: 1.4rem        
+        text-transform: uppercase
+        padding-bottom: 20px
+    &-facebook
+        small
+            font-size: 0.929rem
+            font-weight: 300
+    &-persons
+        padding: 13px 0 20px
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        position: relative
+        &::before
+            content: ""
+            display: block
+            position: absolute
+            top: 3px
+            width: 100%
+            height: 1px
+            background-color: #47adc6
+        &::after
+            content: ""
+            display: block
+            position: absolute
+            bottom: 10px
+            width: 100%
+            height: 1px
+            background-color: #47adc6
+        img
+                padding: 5px 4px
+    &-twitter
+        &-quot
+            display: flex
+            justify-content: space-between
+            margin-bottom: 20px
+            p   
+                max-width: 200px
+                font-size: 0.929rem
+                font-weight: 400
+        &-icon
+            width: 43px
+            height: 43px
+            background: #fff
+            border-radius: 100%
+            margin-right: 20px
+            position: relative
+            & > i
+                font-size: 2rem
+                color: $footer
+                position: absolute
+                top: 50%
+                left: 50%
+                transform: translate(-50%,-50%)
+    &-information
+        nav
+            ul 
+                list-style-type: none
+                li              
+                    padding-left: 20px
+                    a
+                        position: relative
+                        &::before
+                            content: ""
+                            display: block
+                            width: 10px
+                            height: 1px
+                            background-color: #fff
+                            position: absolute
+                            left: -20px
+                            top: 50%
+                            transform-origin: right
+                            transform: rotate(0deg)
+                            transition: all .4s 
+                        span
+                            display: block
+                            width: 10px
+                            height: 1px
+                            background-color: #fff
+                            position: absolute
+                            left: -20px
+                            top: 50%
+                            transform-origin: right
+                            transform: rotate(-0deg)
+                            transition: all .4s 
+                        &:hover
+                            cursor: pointer
+                            &::before
+                                // transform-origin: left
+                                transform: rotate(25deg) 
+                            span
+                                // transform-origin: left
+                                transform: rotate(-25deg)
+    &-contact
+        &-icons
+            padding-top: 40px
+            display: flex
+            position: relative
+            &::before
+                content: ""
+                display: block
+                position: absolute
+                top: 15px
+                width: 70%
+                height: 1px
+                background-color: #42a9c1
+        &-icon
+            width: 36px
+            height: 36px
+            background-color: #fff
+            border-radius: 100%
+            margin-right: 10px
+            position: relative
+            &:last-child
+                margin-right: 0
+            & > i
+                color: $footer
+                font-size: 1.8rem
+                position: absolute
+                top: 50%
+                left: 50%
+                transform: translate(-50%,-50%)
+.copyright
+    padding: 24px 0
+    background-color: $copy-color
+    color: #8adcf0
+    font-size: 0.929rem
+    font-weight: 400
+    line-height: 1.357rem
+    &-wrap
+        display: flex
+        justify-content: space-between
+        nav
+            ul
+                display: flex
+                list-style: none
+                margin-bottom: 0
+                li 
+                    padding: 0 15px 
+                    border-left: 1px solid transparent
+                    position: relative
+                    &+li::before
+                        content: ""
+                        display: block
+                        position: absolute
+                        left: 0
+                        top: 50%
+                        transform: translateY(-40%)
+                        height: 12px
+                        border-left: 1px solid #8adcf0
+                    a
+                        color: #8adcf0
+                        &:hover
+                            cursor: pointer
+             

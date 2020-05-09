@@ -1,0 +1,86 @@
+.header
+    background-color: #fff
+    padding: 40px 0
+    color: $main-color
+    text-transform: uppercase
+    &-logo
+        font-size: 36px    
+    &-nav     
+        display: flex
+        align-content: center   
+        ul
+            padding: 0
+            margin-bottom: 0
+            display: flex
+            list-style: none
+            li
+                margin-right: 15px
+                &:last-child
+                    margin-right: 0
+            a
+                color: $main-color
+                font-size: 14px
+                font-weight: 700    
+    &-search
+        display: flex
+        align-items: center
+        img            
+            margin-left: 5px
+        &-form
+            width: 50%
+            position: relative
+            margin-right: 10px
+            input
+                width: 100%
+                border: 1px solid $main-color
+                padding: 5px
+            button
+                width: 17px
+                height: 17px
+                background: url(../img/search-solid.svg)
+                position: absolute
+                top: 50%
+                margin-top: -8.5px
+                right: 8px
+                border: none
+        span
+            margin-left: 15px
+            color: $main-color
+            font-weight: bold
+            white-space: nowrap
+    &-slider
+        &:active          
+            outline: none
+        &-btn
+            position: absolute
+            top: 50%
+            border-radius: 100%
+            transform: translateY(-50%)
+            z-index: 2
+    &-prev-btn
+        left: 5%
+    &-next-btn
+        right: 5%
+.main-screen
+    position: relative
+    &-text
+        z-index: 2
+        position: absolute
+        left: 15%
+        top: 50%
+        transform: translateY(-50%)
+        p
+            display: inline-block
+            background-color: rgba(0,0,0,.4)
+            color: #fff
+            padding: 5px 20px
+            &:first-child
+                font-size: 30px
+                font-weight: 100
+            &:last-child
+                font-size: 28px
+                font-weight: bold
+
+
+                        
+                

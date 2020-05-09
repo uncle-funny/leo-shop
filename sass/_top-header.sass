@@ -1,0 +1,65 @@
+.top-header
+    background-color: $top-header-color
+    color: $top-header-text
+    padding: 15px 0
+    &-wrap
+        display: flex
+        width: 100%
+        align-items: center
+        justify-content: space-between
+        
+    &__select
+        width: auto
+        background-color: transparent
+        border: none
+        color: $top-header-text
+        outline: none
+        transform: translateY(-1px)
+        &:focus
+            box-shadow: none
+        &:hover
+            cursor: pointer
+        option
+            color: #000
+    &-nav
+        ul
+            display: flex
+            list-style: none
+            margin-bottom: 0
+            li 
+                padding: 0 15px 
+                border-left: 1px solid transparent
+                position: relative
+                &:first-child
+                    padding: 0 15px 0 0
+                &:last-child   
+                    padding: 0 0 0 15px
+                &+li::before
+                    content: ""
+                    display: block
+                    position: absolute
+                    left: 0
+                    top: 50%
+                    transform: translateY(-50%)
+                    height: 12px
+                    border-left: 1px solid $top-header-text
+                a
+                    &::after
+                        content: ""
+                        display: block
+                        width: 75%
+                        height: 1px 
+                        top: 2px
+                        position: relative
+                        margin: 0 auto
+                        transform: scale(0)
+                        transform-origin: left
+                        transition: all 0.2s
+                        background-color: #000
+                    &:hover
+                        cursor: pointer
+                        &::after
+                            transform: scale(1)
+                            
+
+
